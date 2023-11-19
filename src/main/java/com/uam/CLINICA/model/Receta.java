@@ -10,7 +10,7 @@ import lombok.*;
 
 @Embeddable 
 @Getter @Setter
-public class Receta{ //de esta forma ò
+public class Receta{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)// que se muestre tipo receta 1, receta 2 etc... por pantalla pero no me funciona
@@ -36,7 +36,6 @@ public class Receta{ //de esta forma ò
     private String diagnostico;
 
     @Files
-    @Column(length = 20) //fotos de sintomas opcional (ej: ronchas)
-    private String fotos;
-    
+    @Column(length = 32) //fotos de sintomas opcional (ej: ronchas)
+    private String foto;
 }

@@ -4,6 +4,7 @@ import java.time.*;
 
 import javax.persistence.*;
 
+import com.uam.CLINICA.Calculadores.HoraCalculador;
 import org.openxava.annotations.*;
 import org.openxava.calculators.*;
 
@@ -17,12 +18,10 @@ public class Visita extends Identificable{
 	@DefaultValueCalculator(CurrentLocalDateCalculator.class) // Fecha actual
 	private LocalDate date; //fecha
 
-	//@StringTime  @Required
 	@Required
-	//@DefaultValueCalculator(CurrentLocalTimeCalculator.class)
+	@DefaultValueCalculator(HoraCalculador.class)
 	private String horadeEntrada;
 
-	//@StringTime  @Required
 	@Required
 	private String horadeSalida;
 

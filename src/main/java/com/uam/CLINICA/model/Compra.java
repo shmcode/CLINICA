@@ -1,5 +1,6 @@
 package com.uam.CLINICA.model;
 
+import java.time.LocalDate;
 import java.util.*;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import javax.persistence.*;
 import org.openxava.annotations.*;
 
 import lombok.*;
+import org.openxava.calculators.CurrentLocalDateCalculator;
 
 @Entity
 @Getter @Setter
@@ -14,8 +16,9 @@ import lombok.*;
 public class Compra extends Identificable{
 	
 	private String numCompra;
-	
-	private Date fecha;
+
+	@DefaultValueCalculator(CurrentLocalDateCalculator.class)
+	private LocalDate fecha;
 	
 	private int cantidad;
 	
