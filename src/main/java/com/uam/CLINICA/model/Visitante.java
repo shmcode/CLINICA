@@ -15,7 +15,7 @@ import lombok.*;
 public class Visitante{
 	
 	@Id
-	private String id;
+	private String id; //no pueden haber repetidos
 		
 	private String primerNombre;
 	

@@ -6,25 +6,14 @@ import org.openxava.annotations.*;
 
 import lombok.*;
 
-import javax.persistence.Embeddable;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Embeddable
 @Getter @Setter
 
-public class DetalleMedicamento extends Identificable {
-	
-	private Date lote;
-	
-	private Date vencimiento;
-	
-	private String presentacion;
-	
-	@Stereotype("MEMO")
-	private String indicaciones;
-	
-	private int minimoExistencia;
-	
+public class DetalleMedicamento {
 
-
+	@OneToOne(fetch = FetchType.LAZY,optional = false)
+	private Inventario inventario;
 }
+

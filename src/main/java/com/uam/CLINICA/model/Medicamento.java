@@ -28,9 +28,12 @@ public class Medicamento extends Identificable {
     @Required
 	private int cantidadExistencia;
 
-	@ElementCollection //relacion unicamente si es entidad
-	@ListProperties("lote, vencimiento, presentacion, indicaciones, minimoExistencia")
+	@ElementCollection
+	@ListProperties("inventario.lote,inventario.vencimiento,inventario.presentacion,inventario.indicaciones,inventario.minimoExistencia")
 	private Collection<DetalleMedicamento> detalle;
+
+	/*@Embedded //relacion unicamente si es entidad
+	private DetalleMedicamento detalle;*/
 
 
 	/*@ManyToOne(fetch = FetchType.LAZY, --ambos comentados por sol

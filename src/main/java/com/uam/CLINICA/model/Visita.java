@@ -11,11 +11,11 @@ import org.openxava.calculators.*;
 
 import lombok.*;
 
-@Entity 
+@Entity
+@Table(name = "Visita")
 @Getter @Setter
 public class Visita extends Identificable{
 
-	
 	@DefaultValueCalculator(CurrentLocalDateCalculator.class) // Fecha actual
 	private LocalDate date; //fecha
 
