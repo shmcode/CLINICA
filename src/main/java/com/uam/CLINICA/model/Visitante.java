@@ -23,10 +23,10 @@ public class Visitante{
 	
 	@ElementCollection
 	@ListProperties("identificadorPais,numeroTelefono")
-	private Collection<Telefono> telefono;
-	
+	private Collection<Telefono> telefonos;
+
 	@ElementCollection
 	@ListProperties("facultad,carrera")
-	private Collection<Carrera> carrera;
+	private Collection<Carrera> carreras;
 	
 }

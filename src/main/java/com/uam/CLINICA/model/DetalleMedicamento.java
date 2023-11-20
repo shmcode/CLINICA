@@ -6,7 +6,10 @@ import org.openxava.annotations.*;
 
 import lombok.*;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
 
+@Embeddable
 @Getter @Setter
 
 public class DetalleMedicamento extends Identificable {

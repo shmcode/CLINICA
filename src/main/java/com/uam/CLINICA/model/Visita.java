@@ -1,6 +1,7 @@
 package com.uam.CLINICA.model;
 
 import java.time.*;
+import java.util.Collection;
 
 import javax.persistence.*;
 
@@ -32,8 +33,8 @@ public class Visita extends Identificable{
 			optional = true)
     private Visitante visitante;
 
-	@ManyToOne(fetch = FetchType.LAZY,
+	/*@ManyToOne(fetch = FetchType.LAZY, --comentado por sol
 			optional = true)
-    private Receta receta;
+    private Receta receta;*/
 
 }
