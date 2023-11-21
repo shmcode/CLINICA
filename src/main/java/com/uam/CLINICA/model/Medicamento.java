@@ -6,42 +6,25 @@ import org.openxava.annotations.*;
 
 import lombok.*;
 
-import java.util.Collection;
-
 @Entity
 @Getter @Setter
-/*@View(name="Simple",members = "nombreComercial,nombreGenerico,cantidadExistencia,"
-		+ "detalleMedicamento.lote,detalleMedica.vencimiento,detalleMedicamento.presentacion,"
-		+ "detalleMedicamento.indicaciones")*/
-@View(name="Simple", members = "nombreComercial")
+
 public class Medicamento extends Identificable {
 	
 	@Column(length = 20)
     @Required
-	private String nombreComercial;
+	private String nombre;
 	
 	@Column(length = 20)
     @Required
 	private String nombreGenerico;
 	
-	@Column(length = 20)
+	@Column(length = 10)
     @Required
 	private int cantidadExistencia;
 
-	@ElementCollection
-	@ListProperties("inventario.lote,inventario.vencimiento,inventario.presentacion,inventario.indicaciones,inventario.minimoExistencia")
-	private Collection<DetalleMedicamento> detalle;
-
-	/*@Embedded //relacion unicamente si es entidad
-	private DetalleMedicamento detalle;*/
-
-
-	/*@ManyToOne(fetch = FetchType.LAZY, --ambos comentados por sol
-			optional = true)
-	@DescriptionsList(descriptionProperties = "lote, vencimiento, presentacion, indicaciones, minimoExistencia")
+	@OneToMany
+	@ReferenceView("Simple")
 	private DetalleMedicamento detalleMedicamento;
-
-	@ManyToOne(fetch = FetchType.LAZY, optional = true)
-	private DetalleMedicamento detalleMedicamento;*/
 
 }
