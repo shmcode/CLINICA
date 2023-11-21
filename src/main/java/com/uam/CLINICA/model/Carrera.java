@@ -4,13 +4,13 @@ import javax.persistence.*;
 
 import lombok.*;
 
-@Embeddable
+@Entity
 @Getter
 @Setter
-public class Carrera {
+public class Carrera extends Identificable{
 	
 	private String facultad;
 	
-	private String carrera;
+	private String nombre;
 
 }
