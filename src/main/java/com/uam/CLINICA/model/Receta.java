@@ -1,31 +1,33 @@
 package com.uam.CLINICA.model;
 
-import java.util.*;
-
 import javax.persistence.*;
+import javax.persistence.Entity;
 
+import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
 
 import lombok.*;
 
-@Embeddable
+@Entity
 @Getter @Setter
+@View(members = 
+		"sintomatologia, medicamento, cantidad;" +
+		"diagnostico;" +
+		"foto;"
+		)
 public class Receta{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)// que se muestre tipo receta 1, receta 2 etc... por pantalla pero no me funciona
-    private Integer identificador;
+    @GeneratedValue(generator = "system-uuid")
+    @GenericGenerator(name="system-uuid", strategy = "uuid")// que se muestre tipo receta 1, receta 2 etc... por pantalla pero no me funciona
+    private String identificador;
 
-    @ElementCollection
-    @ListProperties("sintoma")
-	private Collection<Sintomatologia> sintoma;
-
-    /*@ManyToOne
-    @ReferenceView("Simple")
-    private Sintomatologia sintoma;*/
+    @ManyToOne
+    @DescriptionsList
+    private Sintomatologia sintomatologia;
     
-	@ManyToOne(fetch = FetchType.LAZY,
-			optional = true)
+    @ManyToOne
+    @DescriptionsList
     private Medicamento medicamento;
 
     @Column(length = 50)
