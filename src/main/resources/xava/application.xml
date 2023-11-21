@@ -4,7 +4,7 @@
 
 <application name="CLINICA"> 
 	
-	<!-- 
+	<!--
 	A default module for each entity is assumed with the
 	controllers on <default-module/>
 	-->

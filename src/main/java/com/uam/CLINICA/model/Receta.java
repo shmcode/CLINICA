@@ -8,7 +8,7 @@ import org.openxava.annotations.*;
 
 import lombok.*;
 
-@Embeddable 
+@Embeddable
 @Getter @Setter
 public class Receta{
 

@@ -14,8 +14,6 @@ import org.openxava.calculators.CurrentLocalDateCalculator;
 @Getter @Setter
 
 public class Compra extends Identificable{
-	
-	private String numCompra;
 
 	@DefaultValueCalculator(CurrentLocalDateCalculator.class)
 	private LocalDate fecha;
