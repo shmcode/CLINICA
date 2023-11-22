@@ -1,5 +1,3 @@
-package com.uam.CLINICA.model;
-
 import javax.persistence.*;
 import javax.persistence.Entity;
 
@@ -10,11 +8,11 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-@View(members = 
+/*@View(members = 
 		"sintomatologia, medicamento, cantidad;" +
 		"diagnostico;" +
 		"foto;"
-		)
+		)*/
 public class Receta{
 
     @Id
@@ -26,7 +24,9 @@ public class Receta{
     @DescriptionsList
     private Sintomatologia sintomatologia;
     
-    @ManyToOne
+    @ManyToOne(
+    		fetch = FetchType.LAZY,	
+    		optional = true)
     @DescriptionsList
     private Medicamento medicamento;
 
@@ -36,8 +36,8 @@ public class Receta{
 
     @Stereotype("MEMO")
     private String diagnostico;
-
+/*
     @Files
     @Column(length = 32) //fotos de sintomas opcional (ej: ronchas)
-    private String foto;
+    private String foto;*/
 }
