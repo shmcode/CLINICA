@@ -1,31 +1,40 @@
 package com.uam.CLINICA.model;
 
-import java.time.LocalDate;
-import java.util.*;
+import java.time.*;
 
 import javax.persistence.*;
 
 import org.openxava.annotations.*;
+import org.openxava.calculators.*;
 
 import lombok.*;
-import org.openxava.calculators.CurrentLocalDateCalculator;
 
 @Entity
 @Getter @Setter
-
+@View(members = "numCompra, fecha;"
+		+ "medicamento, cantidad;" +
+		"proveedor;"
+)
 public class Compra extends Identificable{
+	
+	private String numCompra;
 
 	@DefaultValueCalculator(CurrentLocalDateCalculator.class)
 	private LocalDate fecha;
 	
+	
+	@ManyToOne
+	@DescriptionsList
+	private Medicamento medicamento;
+	
+	
 	private int cantidad;
 	
 	@ManyToOne
-	@ReferenceView("Simple")
-	private Medicamento medicamento;
-	
-	@ManyToOne
-	@ReferenceView("Simple")
+	@DescriptionsList
 	private Proveedor proveedor;
+	
+
+
 	
 }
