@@ -1,40 +1,38 @@
 package com.uam.CLINICA.model;
 
 import java.time.*;
-import java.util.Collection;
 
 import javax.persistence.*;
 
-import com.uam.CLINICA.Calculadores.HoraCalculador;
 import org.openxava.annotations.*;
 import org.openxava.calculators.*;
+
+import com.uam.CLINICA.Calculadores.*;
 
 import lombok.*;
 
 @Entity
 @Table(name = "Visita")
 @Getter @Setter
+
 public class Visita extends Identificable{
 
 	@DefaultValueCalculator(CurrentLocalDateCalculator.class) // Fecha actual
 	private LocalDate date; //fecha
 
-	@Required
 	@DefaultValueCalculator(HoraCalculador.class)
 	private String horadeEntrada;
 
-	@Required
+	//@Required
 	private String horadeSalida;
-
-	/*@Column(length=10) @Required //cif - cedula
-	private String cif;*/
-
+	
 	@ManyToOne(fetch = FetchType.LAZY,
 			optional = true)
+	@ReferenceView("Simple")
     private Visitante visitante;
-
-	/*@ManyToOne(fetch = FetchType.LAZY, --comentado por sol
+	
+	@ManyToOne(fetch = FetchType.LAZY,
 			optional = true)
-    private Receta receta;*/
+	private Receta receta;
 
 }
