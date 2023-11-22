@@ -1,3 +1,5 @@
+package com.uam.CLINICA.model;
+
 import javax.persistence.*;
 import javax.persistence.Entity;
 
@@ -22,6 +24,7 @@ public class Receta{
 
     @ManyToOne
     @DescriptionsList
+ 
     private Sintomatologia sintomatologia;
     
     @ManyToOne(
@@ -30,7 +33,7 @@ public class Receta{
     @DescriptionsList
     private Medicamento medicamento;
 
-    @Column(length = 50)
+ 
     @Required
     private String cantidad;
 

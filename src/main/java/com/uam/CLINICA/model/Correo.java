@@ -9,6 +9,7 @@ import lombok.*;
 @Setter
 public class Correo {
 	
+	//@Required
 	private String correo;
 
 }

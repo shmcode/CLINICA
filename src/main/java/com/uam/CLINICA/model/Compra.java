@@ -17,17 +17,17 @@ import lombok.*;
 )
 public class Compra extends Identificable{
 	
+	//@Required
 	private String numCompra;
 
 	@DefaultValueCalculator(CurrentLocalDateCalculator.class)
 	private LocalDate fecha;
 	
-	
 	@ManyToOne
 	@DescriptionsList
 	private Medicamento medicamento;
 	
-	
+	//@Required
 	private int cantidad;
 	
 	@ManyToOne

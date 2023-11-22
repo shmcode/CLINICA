@@ -9,8 +9,10 @@ import lombok.*;
 @Setter
 public class Carrera extends Identificable{
 	
+	//@Required
 	private String facultad;
 	
+	//@Required
 	private String nombre;
 
 }

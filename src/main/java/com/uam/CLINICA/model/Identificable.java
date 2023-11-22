@@ -1,13 +1,11 @@
 package com.uam.CLINICA.model;
 
-import lombok.*;
-import org.hibernate.annotations.GenericGenerator;
-import org.openxava.annotations.Hidden;
+import javax.persistence.*;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import org.hibernate.annotations.*;
+import org.openxava.annotations.*;
+
+import lombok.*;
 
 @MappedSuperclass //destinada a ser heredada por otras clases
 @Getter

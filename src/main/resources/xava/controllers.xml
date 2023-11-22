@@ -22,4 +22,9 @@
 	</controller>    
     -->
     
+    <controller name="SignIn">
+		<action name="signIn"  			
+			class="action.CustomLogin"/>			
+	</controller>
+    
 </controllers>

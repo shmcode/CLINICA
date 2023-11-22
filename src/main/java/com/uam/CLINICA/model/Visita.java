@@ -35,4 +35,6 @@ public class Visita extends Identificable{
 			optional = true)
 	private Receta receta;
 
+
+
 }

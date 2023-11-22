@@ -15,12 +15,12 @@ public class Proveedor extends Identificable{
 
     @Column(length = 20)
     @Required
-    String nombreProveedor;
+    String nombre;
 
     @Column(length = 20)
     @Required
     String compania;
-
+    
 	@ElementCollection
     @ListProperties("correo")
 	private Collection<Correo> correo;
