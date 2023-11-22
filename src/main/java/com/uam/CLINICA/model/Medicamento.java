@@ -11,20 +11,18 @@ import lombok.*;
 
 public class Medicamento extends Identificable {
 	
-	@Column(length = 20)
     @Required
 	private String nombre;
 	
-	@Column(length = 20)
     @Required
 	private String nombreGenerico;
-	
-	@Column(length = 10)
-    @Required
-	private int cantidadExistencia;
 
-	@OneToMany
-	@ReferenceView("Simple")
-	private DetalleMedicamento detalleMedicamento;
+    
+    @Required
+	private Integer cantidadExistencia;
+
+	//@OneToMany
+	//@ReferenceView("Simple")
+	//private DetalleMedicamento detalleMedicamento;
 
 }
