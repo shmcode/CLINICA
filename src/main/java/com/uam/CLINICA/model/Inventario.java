@@ -15,7 +15,7 @@ import java.util.Date;
 //@View(members = "medicamento{medicamento}")
 public class Inventario extends Identificable{
 
-    private Date lote;
+    /*private Date lote;
 
     private Date vencimiento;
 
@@ -24,7 +24,7 @@ public class Inventario extends Identificable{
     @Stereotype("MEMO")
     private String indicaciones;
 
-    private int minimoExistencia;
+    private int minimoExistencia;*/
 
 	/*@ManyToOne
     //@ReferenceView("Simple")
