@@ -13,8 +13,8 @@ import lombok.*;
 @Getter @Setter
 @View(members = "numCompra, fecha;"
 		+ "medicamento, cantidad;" +
-		"proveedor;"
-)
+		"proveedor;")
+
 public class Compra extends Identificable{
 	
 	private String numCompra;
@@ -31,7 +31,7 @@ public class Compra extends Identificable{
 	private int cantidad;
 	
 	@ManyToOne
-	@DescriptionsList
+	@DescriptionsList(descriptionProperties = "nombreProveedor")
 	private Proveedor proveedor;
 	
 

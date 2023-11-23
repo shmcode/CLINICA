@@ -10,7 +10,6 @@ import lombok.*;
 
 @Entity @Getter @Setter
 @View(name="Simple",members = "nombreProveedor,compania")
-
 public class Proveedor extends Identificable{
 
     @Column(length = 20)

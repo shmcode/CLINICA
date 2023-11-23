@@ -1,6 +1,9 @@
+package com.uam.CLINICA.model;
+
 import javax.persistence.*;
 import javax.persistence.Entity;
 
+import com.uam.CLINICA.model.Sintomatologia;
 import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
 

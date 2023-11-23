@@ -7,8 +7,8 @@ import org.openxava.annotations.*;
 import lombok.*;
 
 @Entity
-@Getter @Setter
-
+@Getter
+@Setter
 public class Medicamento extends Identificable {
 	
     @Required
@@ -17,7 +17,6 @@ public class Medicamento extends Identificable {
     @Required
 	private String nombreGenerico;
 
-    
     @Required
 	private Integer cantidadExistencia;
 
