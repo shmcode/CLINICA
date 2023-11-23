@@ -2,6 +2,7 @@ package com.uam.CLINICA.model;
 
 import javax.persistence.*;
 
+import com.uam.CLINICA.Calculadores.ValidadorMed;
 import org.openxava.annotations.*;
 
 import lombok.*;
@@ -9,10 +10,13 @@ import lombok.*;
 @Entity
 @Getter
 @Setter
+@NamedQueries({
+        @NamedQuery(name="Medicamento.findByNombre",query="select e from Medicamento e where e.nombre like ?1")
+})
 public class Medicamento extends Identificable {
-	
-    @Required
-	private String nombre;
+
+    @PropertyValidator(value= ValidadorMed.class)
+    private String nombre;
 	
     @Required
 	private String nombreGenerico;

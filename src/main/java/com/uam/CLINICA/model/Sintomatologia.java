@@ -2,10 +2,9 @@ package com.uam.CLINICA.model;
 
 import javax.persistence.*;
 
-import com.uam.CLINICA.Calculadores.Validador;
+import com.uam.CLINICA.Calculadores.ValidadorSintoma;
 import lombok.*;
 import org.openxava.annotations.PropertyValidator;
-
 
 @Entity
 @Getter
@@ -16,7 +15,7 @@ import org.openxava.annotations.PropertyValidator;
 
 public class Sintomatologia extends Identificable{
 
-	@PropertyValidator(value= Validador.class)
+	@PropertyValidator(value= ValidadorSintoma.class)
 	private String nombre;
 
 }
