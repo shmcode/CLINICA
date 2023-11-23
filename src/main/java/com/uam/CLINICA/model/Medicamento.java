@@ -2,20 +2,26 @@ package com.uam.CLINICA.model;
 
 import javax.persistence.*;
 
+import org.openxava.annotations.*;
+
 import lombok.*;
 
 @Entity
-@Getter @Setter
-
+@Getter
+@Setter
 public class Medicamento extends Identificable {
 	
-    //@Required
+    @Required
 	private String nombre;
 	
-    //@Required
+    @Required
 	private String nombreGenerico;
-    
-    //@Required
+
+    @Required
 	private Integer cantidadExistencia;
+
+	//@OneToMany
+	//@ReferenceView("Simple")
+	//private DetalleMedicamento detalleMedicamento;
 
 }

@@ -1,3 +1,4 @@
+
 package com.uam.CLINICA.model;
 
 import java.time.*;
@@ -13,28 +14,25 @@ import lombok.*;
 @Getter @Setter
 @View(members = "numCompra, fecha;"
 		+ "medicamento, cantidad;" +
-		"proveedor;"
-)
+		"proveedor;")
+
 public class Compra extends Identificable{
 	
-	//@Required
 	private String numCompra;
 
 	@DefaultValueCalculator(CurrentLocalDateCalculator.class)
 	private LocalDate fecha;
 	
+	
 	@ManyToOne
 	@DescriptionsList
 	private Medicamento medicamento;
 	
-	//@Required
+	
 	private int cantidad;
 	
 	@ManyToOne
-	@DescriptionsList
+	@DescriptionsList(descriptionProperties = "nombreProveedor")
 	private Proveedor proveedor;
-	
 
-
-	
 }

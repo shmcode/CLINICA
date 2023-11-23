@@ -1,11 +1,13 @@
 package com.uam.CLINICA.model;
 
-import javax.persistence.*;
+import  lombok.*;
+import org.hibernate.annotations.GenericGenerator;
+import org.openxava.annotations.Hidden;
 
-import org.hibernate.annotations.*;
-import org.openxava.annotations.*;
-
-import lombok.*;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass //destinada a ser heredada por otras clases
 @Getter
@@ -13,7 +15,7 @@ import lombok.*;
 public class Identificable {
     @Id
     @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name = "system-uuid", strategy = "uuid")
+    @GenericGenerator(name = "system-uuid", strategy = "uuid") //Universally unique identifier
     @Column(length = 32)
     @Hidden
     private String id;

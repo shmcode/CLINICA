@@ -3,6 +3,7 @@ package com.uam.CLINICA.model;
 import javax.persistence.*;
 import javax.persistence.Entity;
 
+import com.uam.CLINICA.model.Sintomatologia;
 import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
 
@@ -24,7 +25,6 @@ public class Receta{
 
     @ManyToOne
     @DescriptionsList
- 
     private Sintomatologia sintomatologia;
     
     @ManyToOne(
@@ -33,7 +33,7 @@ public class Receta{
     @DescriptionsList
     private Medicamento medicamento;
 
- 
+    @Column(length = 50)
     @Required
     private String cantidad;
 

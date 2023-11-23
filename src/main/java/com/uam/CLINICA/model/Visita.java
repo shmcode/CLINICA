@@ -1,3 +1,4 @@
+
 package com.uam.CLINICA.model;
 
 import java.time.*;
@@ -12,7 +13,7 @@ import com.uam.CLINICA.Calculadores.*;
 import lombok.*;
 
 @Entity
-@Table(name = "Visita")
+@Table(name = "Visita") //database table
 @Getter @Setter
 
 public class Visita extends Identificable{
@@ -26,7 +27,7 @@ public class Visita extends Identificable{
 	//@Required
 	private String horadeSalida;
 	
-	@ManyToOne(fetch = FetchType.LAZY,
+	@ManyToOne(fetch = FetchType.LAZY,//Relationship optional
 			optional = true)
 	@ReferenceView("Simple")
     private Visitante visitante;
@@ -34,7 +35,5 @@ public class Visita extends Identificable{
 	@ManyToOne(fetch = FetchType.LAZY,
 			optional = true)
 	private Receta receta;
-
-
 
 }
