@@ -1,3 +1,4 @@
+
 package com.uam.CLINICA.model;
 
 import java.time.*;
@@ -33,8 +34,5 @@ public class Compra extends Identificable{
 	@ManyToOne
 	@DescriptionsList(descriptionProperties = "nombreProveedor")
 	private Proveedor proveedor;
-	
 
-
-	
 }

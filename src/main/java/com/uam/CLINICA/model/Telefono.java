@@ -9,6 +9,8 @@ import lombok.*;
 @Setter
 public class Telefono {
 
+	//@Required
     private String identificadorPais;
+	//@Required
     private String numeroTelefono;
 }

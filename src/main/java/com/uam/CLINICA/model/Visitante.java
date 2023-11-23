@@ -15,16 +15,21 @@ import lombok.*;
 public class Visitante{
 	
 	@Id
+	//@Required
 	private String id; //no pueden haber repetidos
-		
+	
+	//@Required
 	private String primerNombre;
 	
+	//@Required
 	private String primerApellido;
 	
+	//@Required
 	@ElementCollection
 	@ListProperties("identificadorPais,numeroTelefono")
 	private Collection<Telefono> telefonos;
 	
+	//@Required
 	@ManyToOne
     @DescriptionsList
     private Carrera carrera;
