@@ -15,8 +15,13 @@ import lombok.*;
 @Entity
 @Table(name = "Visita") //database table
 @Getter @Setter
-
 public class Visita extends Identificable{
+
+	@ManyToOne(fetch = FetchType.LAZY,
+			optional = true)
+	@DescriptionsList(descriptionProperties = "usuario")
+	private Usuario usuarioQueIngreso;
+
 
 	@DefaultValueCalculator(CurrentLocalDateCalculator.class) // Fecha actual
 	private LocalDate date; //fecha
