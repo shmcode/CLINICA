@@ -421,7 +421,7 @@ for (int f=0; f < rowCount; f++) {
       out.write("\n");
       out.write("	<td class=\"");
       out.print(cssCellClass);
-      out.write(" ox-list-action-cell\">\n");
+      out.write(" ox-list-com.uam.CLINICA.action-cell\">\n");
       out.write("	<nobr ");
       out.print(actionsStyle);
       out.write('>');
@@ -437,13 +437,13 @@ if (sortable) {
 if (!Is.emptyString(removeSelectedAction)) {
       out.write('\n');
       out.write('	');
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f0 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f0_reused = false;
       try {
         _jspx_th_xava_005faction_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f0.setParent(null);
-        // /xava/editors/elementCollectionEditor.jsp(134,1) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/elementCollectionEditor.jsp(134,1) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f0.setAction(removeSelectedAction);
         // /xava/editors/elementCollectionEditor.jsp(134,1) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f0.setArgv("row=" + f + ",viewObject=" + viewName);
@@ -699,15 +699,15 @@ if (!Is.emptyString(removeSelectedAction)) {
       out.print(cssCellClass);
       out.write(' ');
       out.print(align);
-      out.write(" ox-element-collection-search-action-cell\">\n");
+      out.write(" ox-element-collection-search-com.uam.CLINICA.action-cell\">\n");
       out.write("		");
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f1 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f1_reused = false;
       try {
         _jspx_th_xava_005faction_005f1.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f1.setParent(null);
-        // /xava/editors/elementCollectionEditor.jsp(207,2) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/elementCollectionEditor.jsp(207,2) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f1.setAction(searchAction);
         // /xava/editors/elementCollectionEditor.jsp(207,2) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f1.setArgv("keyProperty="+propertyName);

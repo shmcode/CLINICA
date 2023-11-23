@@ -47,7 +47,7 @@
 <!ELEMENT use-object EMPTY>
 <!ATTLIST use-object
  name CDATA #REQUIRED
- action-property CDATA #IMPLIED
+ com.uam.CLINICA.action-property CDATA #IMPLIED
 >
 
 <!ELEMENT set EMPTY>

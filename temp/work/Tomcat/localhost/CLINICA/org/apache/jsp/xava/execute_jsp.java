@@ -258,7 +258,7 @@ if (!(loadingModulePage && manager.isCoreViaAJAX(request))) {
 	manager.executeOnEachRequestActions(request, errors, messages); 
 	if (hasProcessRequest) {
 		manager.execute(request, errors, messages);	
-		if (manager.isListMode()) { // here and before execute the action
+		if (manager.isListMode()) { // here and before execute the com.uam.CLINICA.action
 			tab.setModelName(manager.getModelName());	
 			if (tab.getTabName() == null) { 
 				tab.setTabName(manager.getTabName());

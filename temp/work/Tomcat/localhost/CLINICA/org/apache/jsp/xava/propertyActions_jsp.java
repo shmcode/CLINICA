@@ -168,13 +168,13 @@ if (lastSearchKey) {
  if (view.isSearch() && editable) {
       out.write('	');
       out.write('\n');
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f0 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f0_reused = false;
       try {
         _jspx_th_xava_005faction_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f0.setParent(null);
-        // /xava/propertyActions.jsp(21,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/propertyActions.jsp(21,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f0.setAction(view.getSearchAction());
         // /xava/propertyActions.jsp(21,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f0.setArgv("keyProperty="+propertyKey);
@@ -194,13 +194,13 @@ if (lastSearchKey) {
       out.write('	');
  if (view.isCreateNew() && editable) {
       out.write('\n');
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f1 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f1_reused = false;
       try {
         _jspx_th_xava_005faction_005f1.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f1.setParent(null);
-        // /xava/propertyActions.jsp(24,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/propertyActions.jsp(24,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f1.setAction("Reference.createNew");
         // /xava/propertyActions.jsp(24,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f1.setArgv("model="+referencedModel + ",keyProperty=" + propertyKey);
@@ -220,13 +220,13 @@ if (lastSearchKey) {
       out.write('	');
  if (view.isModify() && editable) {
       out.write('\n');
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f2 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f2_reused = false;
       try {
         _jspx_th_xava_005faction_005f2.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f2.setParent(null);
-        // /xava/propertyActions.jsp(27,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/propertyActions.jsp(27,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f2.setAction("Reference.modify");
         // /xava/propertyActions.jsp(27,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f2.setArgv("model="+referencedModel + ",keyProperty=" + propertyKey);
@@ -247,13 +247,13 @@ if (lastSearchKey) {
       out.write('	');
  if (editable) {
       out.write('\n');
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f3 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f3_reused = false;
       try {
         _jspx_th_xava_005faction_005f3.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f3.setParent(null);
-        // /xava/propertyActions.jsp(30,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/propertyActions.jsp(30,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f3.setAction("Reference.clear");
         // /xava/propertyActions.jsp(30,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f3.setArgv("keyProperty=" + propertyKey);
@@ -278,13 +278,13 @@ if (editable){
 		String action = (String) itActions.next();
 
       out.write('\n');
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f4 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f4_reused = false;
       try {
         _jspx_th_xava_005faction_005f4.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f4.setParent(null);
-        // /xava/propertyActions.jsp(38,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/propertyActions.jsp(38,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f4.setAction(action);
         int _jspx_eval_xava_005faction_005f4 = _jspx_th_xava_005faction_005f4.doStartTag();
         if (_jspx_th_xava_005faction_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -305,13 +305,13 @@ for (java.util.Iterator itActions = view.getActionsNamesForProperty(p, editable)
 	String action = (String) itActions.next();
 
       out.write('\n');
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f5 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f5_reused = false;
       try {
         _jspx_th_xava_005faction_005f5.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f5.setParent(null);
-        // /xava/propertyActions.jsp(46,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/propertyActions.jsp(46,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f5.setAction(action);
         // /xava/propertyActions.jsp(46,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f5.setArgv("xava.keyProperty="+propertyKey);

@@ -289,13 +289,13 @@ for (int c = 0; it.hasNext(); c++) {
       out.print(c);
       out.write("\"> \n");
       out.write("			");
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f0 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f0_reused = false;
       try {
         _jspx_th_xava_005faction_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f0.setParent(null);
-        // /xava/editors/collectionTotals.jsp(55,3) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/collectionTotals.jsp(55,3) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f0.setAction("CollectionTotals.sumColumn");
         // /xava/editors/collectionTotals.jsp(55,3) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f0.setArgv("property="+p.getName() + collectionArgv);

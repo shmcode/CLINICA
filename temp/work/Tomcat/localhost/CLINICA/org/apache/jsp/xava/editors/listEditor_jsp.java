@@ -527,7 +527,7 @@ String resizeColumnClass = resizeColumns?style.getResizeColumns():"";
       try {
         _jspx_th_xava_005fimage_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005fimage_005f0.setParent(null);
-        // /xava/editors/listEditor.jsp(109,1) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(109,1) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fimage_005f0.setAction("List.addColumns");
         // /xava/editors/listEditor.jsp(109,1) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fimage_005f0.setArgv(collectionArgv);
@@ -687,7 +687,7 @@ String headerLabel=Strings.noLastToken(label) + " <nobr>" + Strings.lastToken(la
       try {
         _jspx_th_xava_005flink_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005flink_005f0.setParent(null);
-        // /xava/editors/listEditor.jsp(173,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(173,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f0.setAction("List.orderBy");
         // /xava/editors/listEditor.jsp(173,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f0.setArgv("property="+property.getQualifiedName() + collectionArgv);
@@ -736,13 +736,13 @@ String headerLabel=Strings.noLastToken(label) + " <nobr>" + Strings.lastToken(la
       }
       out.write(" ox-display-none\">\n");
       out.write("	");
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f0 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f0_reused = false;
       try {
         _jspx_th_xava_005faction_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f0.setParent(null);
-        // /xava/editors/listEditor.jsp(181,1) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(181,1) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f0.setAction("List.changeColumnName");
         // /xava/editors/listEditor.jsp(181,1) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f0.setArgv("property="+property.getQualifiedName() + collectionArgv);
@@ -835,13 +835,13 @@ String headerLabel=Strings.noLastToken(label) + " <nobr>" + Strings.lastToken(la
       out.write("<td class=\"");
       out.print(style.getFilterCell());
       out.write(" ox-list-subheader\"> \n");
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f1 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f1_reused = false;
       try {
         _jspx_th_xava_005faction_005f1.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f1.setParent(null);
-        // /xava/editors/listEditor.jsp(202,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(202,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f1.setAction("List.filter");
         // /xava/editors/listEditor.jsp(202,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f1.setArgv(collectionArgv);
@@ -1157,7 +1157,7 @@ if (tab.isRowsHidden()) {
       try {
         _jspx_th_xava_005flink_005f1.setPageContext(_jspx_page_context);
         _jspx_th_xava_005flink_005f1.setParent(null);
-        // /xava/editors/listEditor.jsp(352,1) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(352,1) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f1.setAction("List.showRows");
         // /xava/editors/listEditor.jsp(352,1) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f1.setArgv(collectionArgv);
@@ -1207,7 +1207,7 @@ for (int f=tab.getInitialIndex(); f<model.getRowCount() && f < finalIndex; f++) 
       out.write(">\n");
       out.write("	<td class=\"");
       out.print(cssCellClass);
-      out.write(" ox-list-action-cell\">\n");
+      out.write(" ox-list-com.uam.CLINICA.action-cell\">\n");
       out.write("	<nobr> \n");
       out.write("	");
 if (sortable) { 
@@ -1221,13 +1221,13 @@ if (sortable) {
 	if (!org.openxava.util.Is.emptyString(action)) {  
 
       out.write('\n');
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f2 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f2_reused = false;
       try {
         _jspx_th_xava_005faction_005f2.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f2.setParent(null);
-        // /xava/editors/listEditor.jsp(386,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(386,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f2.setAction(action);
         // /xava/editors/listEditor.jsp(386,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f2.setArgv("row=" + f + actionArgv);
@@ -1249,13 +1249,13 @@ if (sortable) {
 
       out.write("\n");
       out.write("			");
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f3 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f3_reused = false;
       try {
         _jspx_th_xava_005faction_005f3.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f3.setParent(null);
-        // /xava/editors/listEditor.jsp(393,3) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(393,3) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f3.setAction(rowAction);
         // /xava/editors/listEditor.jsp(393,3) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f3.setArgv("row=" + f + actionArgv);
@@ -1330,7 +1330,7 @@ if (sortable) {
       try {
         _jspx_th_xava_005flink_005f2.setPageContext(_jspx_page_context);
         _jspx_th_xava_005flink_005f2.setParent(null);
-        // /xava/editors/listEditor.jsp(426,2) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(426,2) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f2.setAction(action);
         // /xava/editors/listEditor.jsp(426,2) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f2.setArgv("row=" + f + actionArgv);
@@ -1462,13 +1462,13 @@ for (int c=0; c<model.getColumnCount(); c++) {
  if (!tab.isFixedTotal(c) && XavaPreferences.getInstance().isSummationInList()) { 
       out.write("\n");
       out.write("				");
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f4 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f4_reused = false;
       try {
         _jspx_th_xava_005faction_005f4.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f4.setParent(null);
-        // /xava/editors/listEditor.jsp(459,4) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(459,4) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f4.setAction("List.removeColumnSum");
         // /xava/editors/listEditor.jsp(459,4) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f4.setArgv("property="+p.getQualifiedName() + collectionArgv);
@@ -1562,13 +1562,13 @@ for (int c=0; c<model.getColumnCount(); c++) {
       out.print(width);
       out.write(">\n");
       out.write("			");
-      //  xava:action
+      //  xava:com.uam.CLINICA.action
       org.openxava.web.taglib.ActionTag _jspx_th_xava_005faction_005f5 = (org.openxava.web.taglib.ActionTag) _005fjspx_005ftagPool_005fxava_005faction_0026_005fargv_005faction_005fnobody.get(org.openxava.web.taglib.ActionTag.class);
       boolean _jspx_th_xava_005faction_005f5_reused = false;
       try {
         _jspx_th_xava_005faction_005f5.setPageContext(_jspx_page_context);
         _jspx_th_xava_005faction_005f5.setParent(null);
-        // /xava/editors/listEditor.jsp(483,3) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(483,3) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f5.setAction("List.sumColumn");
         // /xava/editors/listEditor.jsp(483,3) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005faction_005f5.setArgv("property="+p.getQualifiedName() + collectionArgv);
@@ -1839,7 +1839,7 @@ if (current > 1) {
       try {
         _jspx_th_xava_005fimage_005f1.setPageContext(_jspx_page_context);
         _jspx_th_xava_005fimage_005f1.setParent(null);
-        // /xava/editors/listEditor.jsp(591,156) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(591,156) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fimage_005f1.setAction("List.goPreviousPage");
         // /xava/editors/listEditor.jsp(591,156) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fimage_005f1.setArgv(collectionArgv);
@@ -1915,7 +1915,7 @@ if (i == current) {
       try {
         _jspx_th_xava_005flink_005f3.setPageContext(_jspx_page_context);
         _jspx_th_xava_005flink_005f3.setParent(null);
-        // /xava/editors/listEditor.jsp(619,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(619,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f3.setAction("List.goPage");
         // /xava/editors/listEditor.jsp(619,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f3.setArgv("page=" + i + collectionArgv);
@@ -1983,7 +1983,7 @@ if (!tab.isLastPage()) {
       try {
         _jspx_th_xava_005fimage_005f2.setPageContext(_jspx_page_context);
         _jspx_th_xava_005fimage_005f2.setParent(null);
-        // /xava/editors/listEditor.jsp(639,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(639,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fimage_005f2.setAction("List.goNextPage");
         // /xava/editors/listEditor.jsp(639,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fimage_005f2.setArgv(collectionArgv);
@@ -2115,7 +2115,7 @@ else {
       try {
         _jspx_th_xava_005flink_005f4.setPageContext(_jspx_page_context);
         _jspx_th_xava_005flink_005f4.setParent(null);
-        // /xava/editors/listEditor.jsp(678,1) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/editors/listEditor.jsp(678,1) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f4.setAction("List.hideRows");
         // /xava/editors/listEditor.jsp(678,1) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f4.setArgv(collectionArgv);

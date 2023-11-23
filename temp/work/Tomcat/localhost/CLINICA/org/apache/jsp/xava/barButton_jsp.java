@@ -178,7 +178,7 @@ if (!Is.emptyString(actionName)) {
       try {
         _jspx_th_xava_005fimage_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005fimage_005f0.setParent(null);
-        // /xava/barButton.jsp(24,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/barButton.jsp(24,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fimage_005f0.setAction(action.getQualifiedName());
         // /xava/barButton.jsp(24,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fimage_005f0.setArgv(argv );
@@ -205,7 +205,7 @@ if (!Is.emptyString(actionName)) {
       try {
         _jspx_th_xava_005flink_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005flink_005f0.setParent(null);
-        // /xava/barButton.jsp(27,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/barButton.jsp(27,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f0.setAction(action.getQualifiedName());
         // /xava/barButton.jsp(27,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f0.setArgv(argv );

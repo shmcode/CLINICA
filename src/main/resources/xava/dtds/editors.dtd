@@ -13,8 +13,8 @@
  always-reload (true|false) "false"
  composite (true|false) "false" 
  icon CDATA #IMPLIED
- init-action CDATA #IMPLIED
- release-action CDATA #IMPLIED
+ init-com.uam.CLINICA.action CDATA #IMPLIED
+ release-com.uam.CLINICA.action CDATA #IMPLIED
  selectable-items (true|false) "true"
 >
 

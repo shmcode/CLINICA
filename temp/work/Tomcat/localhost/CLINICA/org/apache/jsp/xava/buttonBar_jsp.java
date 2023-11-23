@@ -298,7 +298,7 @@ if (manager.isButtonBarVisible()) {
       try {
         _jspx_th_xava_005flink_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005flink_005f0.setParent(null);
-        // /xava/buttonBar.jsp(99,1) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/buttonBar.jsp(99,1) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f0.setAction("ListFormat.select");
         // /xava/buttonBar.jsp(99,1) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005flink_005f0.setArgv("editor=" + editor);
@@ -506,7 +506,7 @@ if (manager.isButtonBarVisible()) {
     try {
       _jspx_th_xava_005fimage_005f0.setPageContext(_jspx_page_context);
       _jspx_th_xava_005fimage_005f0.setParent(null);
-      // /xava/buttonBar.jsp(113,4) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+      // /xava/buttonBar.jsp(113,4) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_xava_005fimage_005f0.setAction("EmailNotifications.unsubscribe");
       int _jspx_eval_xava_005fimage_005f0 = _jspx_th_xava_005fimage_005f0.doStartTag();
       if (_jspx_th_xava_005fimage_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -530,7 +530,7 @@ if (manager.isButtonBarVisible()) {
     try {
       _jspx_th_xava_005fimage_005f1.setPageContext(_jspx_page_context);
       _jspx_th_xava_005fimage_005f1.setParent(null);
-      // /xava/buttonBar.jsp(120,4) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+      // /xava/buttonBar.jsp(120,4) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_xava_005fimage_005f1.setAction("EmailNotifications.subscribe");
       int _jspx_eval_xava_005fimage_005f1 = _jspx_th_xava_005fimage_005f1.doStartTag();
       if (_jspx_th_xava_005fimage_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

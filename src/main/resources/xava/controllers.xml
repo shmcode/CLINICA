@@ -16,15 +16,15 @@
     <!-- Controller:
     <controller name="Teacher">
     	<extends controller="Typical"/>
-    	<action name="new" icon="library-plus" keystroke="Control N"
+    	<com.uam.CLINICA.action name="new" icon="library-plus" keystroke="Control N"
         	class="actions.CreateTeacher">
-    	</action>
+    	</com.uam.CLINICA.action>
 	</controller>    
     -->
     
     <controller name="SignIn">
 		<action name="signIn"  			
-			class="action.CustomLogin"/>			
+			class="com.uam.CLINICA.action.CustomLogin"/>
 	</controller>
     
 </controllers>

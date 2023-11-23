@@ -166,7 +166,7 @@ if (manager.isBottomButtonsVisible()) {
       try {
         _jspx_th_xava_005fbutton_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005fbutton_005f0.setParent(null);
-        // /xava/bottomButtons.jsp(20,1) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/bottomButtons.jsp(20,1) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fbutton_005f0.setAction(defaultAction);
         int _jspx_eval_xava_005fbutton_005f0 = _jspx_th_xava_005fbutton_005f0.doStartTag();
         if (_jspx_th_xava_005fbutton_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -202,7 +202,7 @@ if (manager.isBottomButtonsVisible()) {
       try {
         _jspx_th_xava_005fbutton_005f1.setPageContext(_jspx_page_context);
         _jspx_th_xava_005fbutton_005f1.setParent(null);
-        // /xava/bottomButtons.jsp(33,2) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/bottomButtons.jsp(33,2) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fbutton_005f1.setAction(action.getQualifiedName());
         int _jspx_eval_xava_005fbutton_005f1 = _jspx_th_xava_005fbutton_005f1.doStartTag();
         if (_jspx_th_xava_005fbutton_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

@@ -374,7 +374,7 @@ if (tab.isTitleVisible()) {
     try {
       _jspx_th_xava_005flink_005f0.setPageContext(_jspx_page_context);
       _jspx_th_xava_005flink_005f0.setParent(null);
-      // /xava/list.jsp(38,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+      // /xava/list.jsp(38,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_xava_005flink_005f0.setAction("List.saveConfiguration");
       int _jspx_eval_xava_005flink_005f0 = _jspx_th_xava_005flink_005f0.doStartTag();
       if (_jspx_th_xava_005flink_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -398,7 +398,7 @@ if (tab.isTitleVisible()) {
     try {
       _jspx_th_xava_005flink_005f1.setPageContext(_jspx_page_context);
       _jspx_th_xava_005flink_005f1.setParent(null);
-      // /xava/list.jsp(44,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+      // /xava/list.jsp(44,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_xava_005flink_005f1.setAction("List.changeConfiguration");
       int _jspx_eval_xava_005flink_005f1 = _jspx_th_xava_005flink_005f1.doStartTag();
       if (_jspx_th_xava_005flink_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

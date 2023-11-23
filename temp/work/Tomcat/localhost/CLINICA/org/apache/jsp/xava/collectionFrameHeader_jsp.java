@@ -219,7 +219,7 @@ if (!collectionView.isCollectionFromModel()) {
       try {
         _jspx_th_xava_005fimage_005f0.setPageContext(_jspx_page_context);
         _jspx_th_xava_005fimage_005f0.setParent(null);
-        // /xava/collectionFrameHeader.jsp(42,0) name = action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+        // /xava/collectionFrameHeader.jsp(42,0) name = com.uam.CLINICA.action type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fimage_005f0.setAction(collectionView.getNewCollectionElementAction());
         // /xava/collectionFrameHeader.jsp(42,0) name = argv type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
         _jspx_th_xava_005fimage_005f0.setArgv("viewObject="+viewName);
