@@ -16,6 +16,7 @@ import lombok.*;
 public class Medicamento extends Identificable {
 
     @PropertyValidator(value= ValidadorMed.class)
+    @Required
     private String nombre;
 	
     @Required
