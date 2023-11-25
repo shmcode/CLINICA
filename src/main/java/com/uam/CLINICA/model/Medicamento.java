@@ -27,6 +27,6 @@ public class Medicamento extends Identificable {
 
 	//@OneToMany
 	//@ReferenceView("Simple")
-	//private DetalleMedicamento detalleMedicamento;
+	//private Inventario detalleMedicamento;
 
 }

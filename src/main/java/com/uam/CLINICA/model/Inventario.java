@@ -1,19 +1,40 @@
 package com.uam.CLINICA.model;
 
+import java.util.*;
+
 import javax.persistence.*;
+
+import org.openxava.annotations.*;
 
 import lombok.*;
 
-
 @Entity
 @Getter @Setter
-//@View(members = "medicamento{medicamento}")
+@View(name="Simple", members="lote,vencimiento,presentacion,minimoExistencia;"
+		+ "indicaciones;")
+
 public class Inventario extends Identificable{
+	
+	@ManyToOne(fetch = FetchType.LAZY,
+			optional = true)
+	@DescriptionsList
+	private Medicamento medicamento;
+	
+	//@Required
+   private Date lote;
 
- 
+	//@Required
+    private Date vencimiento;
 
-	/*@ManyToOne
-    //@ReferenceView("Simple")
-    private Medicamento medicamento;*/
+	//@Required
+    private String presentacion;
 
+    @Stereotype("MEMO")
+    private String indicaciones;
+
+	//@Required
+    private int minimoExistencia;
+
+	
 }
+

@@ -9,7 +9,6 @@ public interface IDAO {
 
 	   <T> List<T> get(String namedQuery, Class<T> clazz,Object...param);
 
-
 	   <T> T findById(Class<T> clazz,Integer id);
 
 	   <T> void remove(T entity);

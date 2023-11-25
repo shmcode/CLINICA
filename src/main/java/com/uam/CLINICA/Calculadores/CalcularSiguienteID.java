@@ -11,7 +11,7 @@ public class CalcularSiguienteID implements ICalculator {
 	
 	@Getter @Setter
 	int id;
-	
+
 	@Override
 	public Object calculate() throws Exception {
 		Query query = XPersistence.getManager()
@@ -20,6 +20,7 @@ public class CalcularSiguienteID implements ICalculator {
 		Integer ultimoID = (Integer) query.getSingleResult();
 		return ultimoID == null ? 1 : ultimoID + 1;
 	}
-	
+
+
 
 }
