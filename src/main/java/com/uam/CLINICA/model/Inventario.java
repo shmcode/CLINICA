@@ -13,7 +13,7 @@ import lombok.*;
 @View(name="Simple", members="lote,vencimiento,presentacion,minimoExistencia;"
 		+ "indicaciones;")
 
-public class Inventario extends Identificable{
+public class DetalleMedicamento extends Identificable{
 	
 	@ManyToOne(fetch = FetchType.LAZY,
 			optional = true)
@@ -31,9 +31,10 @@ public class Inventario extends Identificable{
 
     @Stereotype("MEMO")
     private String indicaciones;
-
-	//@Required
-    private int minimoExistencia;
+    
+    @ElementCollection
+  //  @ListProperties("")
+    private Collection<Compra> compra;
 
 	
 }
