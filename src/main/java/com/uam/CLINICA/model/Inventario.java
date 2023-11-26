@@ -13,7 +13,7 @@ import lombok.*;
 @View(name="Simple", members="lote,vencimiento,presentacion,minimoExistencia;"
 		+ "indicaciones;")
 
-public class DetalleMedicamento extends Identificable{
+public class Inventario extends Identificable{
 	
 	@ManyToOne(fetch = FetchType.LAZY,
 			optional = true)
