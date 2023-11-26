@@ -1,41 +1,40 @@
 package com.uam.CLINICA.model;
 
-import java.util.*;
+import java.time.*;
 
 import javax.persistence.*;
 
 import org.openxava.annotations.*;
+import org.openxava.calculators.*;
 
 import lombok.*;
 
-@Entity
+@Embeddable
 @Getter @Setter
-@View(name="Simple", members="lote,vencimiento,presentacion,minimoExistencia;"
-		+ "indicaciones;")
+@View(members = "numCompra, fecha;"
+		+ "cantidad;" +
+		"proveedor;"
+)
 
-public class Inventario extends Identificable{
+	 
+public class Compra{
 	
-	@ManyToOne(fetch = FetchType.LAZY,
-			optional = true)
+	//@Required
+	private int numCompra;
+
+	@DefaultValueCalculator(CurrentLocalDateCalculator.class)
+	private LocalDate fecha;
+	
+	@ManyToOne(fetch = FetchType.LAZY, optional = true)
 	@DescriptionsList
 	private Medicamento medicamento;
 	
 	//@Required
-   private Date lote;
-
-	//@Required
-    private Date vencimiento;
-
-	//@Required
-    private String presentacion;
-
-    @Stereotype("MEMO")
-    private String indicaciones;
-    
-    @ElementCollection
-  //  @ListProperties("")
-    private Collection<Compra> compra;
+	private int cantidad;
+	
+	@ManyToOne
+	@DescriptionsList
+	private Proveedor proveedor;
 
 	
 }
-
