@@ -25,7 +25,7 @@ public class Medicamento extends Identificable {
 	private Integer cantidadExistencia;
 	
 	@OneToMany(mappedBy="medicamento", cascade=CascadeType.REMOVE)
-	private List<DetalleMedicamento> detalleMedicamento;
+	private List<Inventario> inventario;
 	
 
 }
