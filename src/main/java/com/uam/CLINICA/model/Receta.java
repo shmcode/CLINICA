@@ -2,9 +2,6 @@ package com.uam.CLINICA.model;
 
 import javax.persistence.*;
 import javax.persistence.Entity;
-
-import com.uam.CLINICA.model.Sintomatologia;
-import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
 
 import lombok.*;
@@ -16,12 +13,7 @@ import lombok.*;
 		"diagnostico;" +
 		"foto;"
 		)*/
-public class Receta{
-
-    @Id
-    @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name="system-uuid", strategy = "uuid")// que se muestre tipo receta 1, receta 2 etc... por pantalla pero no me funciona
-    private String identificador;
+public class Receta extends Identificable{
 
     @ManyToOne
     @DescriptionsList
