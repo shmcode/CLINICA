@@ -1,20 +1,39 @@
 package com.uam.CLINICA.model;
 
 import javax.persistence.*;
-import javax.persistence.Entity;
+
 import org.openxava.annotations.*;
+import org.openxava.calculators.*;
+
+import com.uam.CLINICA.Calculadores.*;
 
 import lombok.*;
 
 @Entity
 @Getter @Setter
-/*@View(members = 
-		"sintomatologia, medicamento, cantidad;" +
-		"diagnostico;" +
-		"foto;"
-		)*/
-public class Receta extends Identificable{
+@View(name="Simple", members = 
+		"numero;"
+		+ "sintomatologia;"
+		+ "medicamento,cantidad;" +
+		"diagnostico;" 
+		)
+@View(members="anyo,numero;"
+		+ "sintomatologia;"
+		+ "medicamento,cantidad;"
+		+ "diagnostico;")
 
+public class Receta extends Identificable{
+	
+	@Column(length=4)
+	@DefaultValueCalculator(CurrentYearCalculator.class)
+	int anyo;
+	
+	@Column(length=6)
+	@DefaultValueCalculator(value = CalculadorSiguienteNumeroParaAnyo.class,
+	properties = @PropertyValue(name = "anyo"))
+	@ReadOnly
+	int numero;
+	
     @ManyToOne
     @DescriptionsList
     private Sintomatologia sintomatologia;
@@ -25,14 +44,12 @@ public class Receta extends Identificable{
     @DescriptionsList
     private Medicamento medicamento;
 
-    @Column(length = 50)
+ 
     @Required
     private String cantidad;
 
     @Stereotype("MEMO")
     private String diagnostico;
-/*
-    @Files
-    @Column(length = 32) //fotos de sintomas opcional (ej: ronchas)
-    private String foto;*/
+    
+    
 }
