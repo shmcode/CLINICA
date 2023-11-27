@@ -3,39 +3,48 @@ package com.uam.CLINICA.model;
 import java.util.*;
 
 import javax.persistence.*;
+import javax.persistence.Entity;
 
+import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
+import org.openxava.calculators.*;
+
+import com.uam.CLINICA.Calculadores.*;
 
 import lombok.*;
 
 @Entity
 @Getter @Setter
-@View(name="Simple", members="lote,vencimiento,presentacion,minimoExistencia;"
-		+ "indicaciones;")
+@View(members=
+			"anyo, numero;"
+			+ "medicamento;"
+		+ "compra;")
 
-public class Inventario extends Identificable{
+public class Inventario{
+	
+	@Id
+	@GeneratedValue(generator = "system-uuid")
+	@Hidden
+	@GenericGenerator(name = "system-uuid", strategy = "uuid")
+    private String identificador;
+	
+	@Column(length=4)
+	@DefaultValueCalculator(CurrentYearCalculator.class)
+	int anyo;
+	
+	@Column(length=6)
+	@DefaultValueCalculator(value = CalculadorSiguienteNumeroParaAnyo.class,
+	properties = @PropertyValue(name = "anyo"))
+	@ReadOnly
+	int numero;
 	
 	@ManyToOne(fetch = FetchType.LAZY,
 			optional = true)
-	@DescriptionsList
+	@ReferenceView("Simple")
 	private Medicamento medicamento;
-	
-	//@Required
-   private Date lote;
-
-	//@Required
-    private Date vencimiento;
-
-	//@Required
-    private String presentacion;
-
-    @Stereotype("MEMO")
-    private String indicaciones;
     
     @ElementCollection
-  //  @ListProperties("")
+    @ListProperties("medicamento.id,medicamento.nombre,cantidad,lote,vencimiento,presentacion,proveedor.compania")
     private Collection<Compra> compra;
-
 	
 }
-
