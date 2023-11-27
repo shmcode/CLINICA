@@ -42,10 +42,11 @@ public class Visita extends Identificable{
 	
 	@Column(length=10)
 	@DefaultValueCalculator(HoraCalculador.class)
-	private String horaEntrada;
+	private String horadeEntrada;
 
+	@Required
 	@Column(length=10)
-	private String horaSalida;
+	private String horadeSalida;
 	
 	@ManyToOne(fetch = FetchType.LAZY,
 			optional = false)
@@ -56,5 +57,18 @@ public class Visita extends Identificable{
 			optional = false)
 	@ReferenceView("Simple")
 	private Receta receta;
+	@PrePersist
+	@PreUpdate
+	private void validarHoras() throws Exception {
+		if (horadeEntrada != null && horadeSalida != null) {
+			LocalTime horaEntrada = LocalTime.parse(horadeEntrada);
+			LocalTime horaSalida = LocalTime.parse(horadeSalida);
 
+			if (horaSalida.isBefore(horaEntrada)) {
+				throw new javax.validation.ValidationException(
+						"La hora de salida debe ser mayor que la hora de entrada"
+				);
+			}
+		}
+	}
 }
