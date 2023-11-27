@@ -1,9 +1,9 @@
 package com.uam.CLINICA.model;
 
-import java.util.*;
-
 import javax.persistence.*;
+import javax.persistence.Entity;
 
+import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
 
 import lombok.*;
@@ -11,21 +11,22 @@ import lombok.*;
 @Entity
 @Getter @Setter
 @View(name="Simple", members="nombre,nombreGenerico;"
-		+ "cantidadExistencia;"
-		+ "detalleMedicamento;")
-public class Medicamento extends Identificable {
+		+ "cantidadExistencia;")
+public class Medicamento{
 	
-    //@Required
+	@Id
+	@GeneratedValue(generator = "system-uuid")
+	@Hidden
+	@GenericGenerator(name = "system-uuid", strategy = "uuid")
+    private String identificador;
+	
+	@Column(length=9)
+	int id;
+	
 	private String nombre;
 	
-    //@Required
 	private String nombreGenerico;
     
-    //@Required
 	private Integer cantidadExistencia;
-	
-	@OneToMany(mappedBy="medicamento", cascade=CascadeType.REMOVE)
-	private List<Inventario> inventario;
-	
 
 }
