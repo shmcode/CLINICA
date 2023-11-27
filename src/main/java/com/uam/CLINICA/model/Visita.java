@@ -1,4 +1,3 @@
-
 package com.uam.CLINICA.model;
 
 import java.time.*;
@@ -13,32 +12,49 @@ import com.uam.CLINICA.Calculadores.*;
 import lombok.*;
 
 @Entity
-@Table(name = "Visita") //database table
 @Getter @Setter
+@View(members="usuario;"
+		+ "anyo,numero;"
+		+ "horaEntrada,horaSalida,date;"
+		+ "visitante;"
+		+ "receta;")
+
 public class Visita extends Identificable{
-
-	@ManyToOne(fetch = FetchType.LAZY,
-			optional = true)
-	@DescriptionsList(descriptionProperties = "usuario")
-	private Usuario usuarioQueIngreso;
-
-
-	@DefaultValueCalculator(CurrentLocalDateCalculator.class) // Fecha actual
-	private LocalDate date; //fecha
-
-	@DefaultValueCalculator(HoraCalculador.class)
-	private String horadeEntrada;
-
-	//@Required
-	private String horadeSalida;
 	
-	@ManyToOne(fetch = FetchType.LAZY,//Relationship optional
-			optional = true)
+	@Column(length=6)
+	@DefaultValueCalculator(CurrentYearCalculator.class)
+	int anyo;
+	
+	@Column(length=6)
+	@DefaultValueCalculator(value = CalculadorSiguienteNumeroParaAnyo.class,
+	properties = @PropertyValue(name = "anyo"))
+	@ReadOnly
+	int numero;
+	
+	@ManyToOne(fetch = FetchType.LAZY,
+			optional = false)
+	@DescriptionsList
+    private Usuario usuario;
+	
+	@Column(length=10)
+	@DefaultValueCalculator(CurrentLocalDateCalculator.class)
+	private LocalDate date; 
+	
+	@Column(length=10)
+	@DefaultValueCalculator(HoraCalculador.class)
+	private String horaEntrada;
+
+	@Column(length=10)
+	private String horaSalida;
+	
+	@ManyToOne(fetch = FetchType.LAZY,
+			optional = false)
 	@ReferenceView("Simple")
     private Visitante visitante;
 	
 	@ManyToOne(fetch = FetchType.LAZY,
-			optional = true)
+			optional = false)
+	@ReferenceView("Simple")
 	private Receta receta;
 
 }
