@@ -10,26 +10,23 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-@View(name="Simple",members = "primerNombre,primerApellido")
+@View(name="Simple",members = "cifID,primerNombre, primerApellido")
 
-public class Visitante{
+public class Visitante extends Identificable{
 	
-	@Id
-	//@Required
-	private String id; //no pueden haber repetidos
+	@Column(length=15)
+	private String cifID;
 	
-	//@Required
+	@Column(length=25)
 	private String primerNombre;
 	
-	//@Required
+	@Column(length=25)
 	private String primerApellido;
 	
-	//@Required
 	@ElementCollection
 	@ListProperties("identificadorPais,numeroTelefono")
 	private Collection<Telefono> telefonos;
 	
-	//@Required
 	@ManyToOne
     @DescriptionsList
     private Carrera carrera;
