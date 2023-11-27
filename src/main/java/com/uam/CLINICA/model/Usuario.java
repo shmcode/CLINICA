@@ -13,10 +13,9 @@ import lombok.*;
 								+ "where e.usuario=?1 and e.password=?2")
 		}
 		)
-public class Usuario {
-	
-	@Id
-	private String id;
+public class Usuario extends Identificable {
+
+	private String nombre;
 	
 	private String usuario;
 	
