@@ -33,8 +33,8 @@ public class Inventario{
 	int anyo;
 	
 	@Column(length=6)
-	@DefaultValueCalculator(value = CalculadorSiguienteNumeroParaAnyo.class,
-	properties = @PropertyValue(name = "anyo"))
+	@DefaultValueCalculator(value=SiguienteNumeroInventario.class,
+	properties=@PropertyValue(name="anyo"))
 	@ReadOnly
 	int numero;
 	
@@ -48,3 +48,4 @@ public class Inventario{
     private Collection<Compra> compra;
 	
 }
+
