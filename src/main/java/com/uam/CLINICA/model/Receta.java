@@ -29,12 +29,12 @@ public class Receta extends Identificable{
 	int anyo;
 	
 	@Column(length=6)
-	@DefaultValueCalculator(value = CalculadorSiguienteNumeroParaAnyo.class,
-	properties = @PropertyValue(name = "anyo"))
+	@DefaultValueCalculator(value=SiguienteNumeroReceta.class,
+	properties=@PropertyValue(name="anyo"))
 	@ReadOnly
 	int numero;
 	
-    @ManyToOne
+    @ManyToOne(fetch=FetchType.LAZY)
     @DescriptionsList
     private Sintomatologia sintomatologia;
     
@@ -50,6 +50,7 @@ public class Receta extends Identificable{
 
     @Stereotype("MEMO")
     private String diagnostico;
+    
     
     
 }
