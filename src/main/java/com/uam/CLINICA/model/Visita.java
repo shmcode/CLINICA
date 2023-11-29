@@ -65,7 +65,7 @@ public class Visita extends Identificable{
 
 			if (horaSalida.isBefore(horaEntrada)) {
 				throw new javax.validation.ValidationException(
-						"La hora de salida debe ser mayor que la hora de entrada"
+						"La hora de salida debe ser mayor que la hora de entrada."
 				);
 			}
 		}
