@@ -11,9 +11,10 @@ import lombok.*;
 @NamedQueries({
         @NamedQuery(name="Proveedor.findByNombre",query="select e from Proveedor e where e.nombre like ?1")
 })
-@View(name="Simple",members = "nombreProveedor,compania, correo")
+@View(name="Simple",members = "nombreProveedor,compania")
 public class Proveedor extends Identificable{
 
+    @Column(length = 20)
     @PropertyValidator(value= ValidadorProveedor.class)
     @Required
     private String nombre;

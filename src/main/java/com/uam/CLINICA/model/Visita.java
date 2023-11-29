@@ -26,8 +26,8 @@ public class Visita extends Identificable{
 	int anyo;
 	
 	@Column(length=6)
-	@DefaultValueCalculator(value = CalculadorSiguienteNumeroParaAnyo.class,
-	properties = @PropertyValue(name = "anyo"))
+	@DefaultValueCalculator(value=SiguienteNumeroVisita.class,
+	properties=@PropertyValue(name="anyo"))
 	@ReadOnly
 	int numero;
 	
@@ -48,11 +48,10 @@ public class Visita extends Identificable{
 	@Column(length=10)
 	private String horadeSalida;
 	
-	@ManyToOne(fetch = FetchType.LAZY,
-			optional = false)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@ReferenceView("Simple")
-    private Visitante visitante;
-	
+	private Visitante visitante;
+
 	@ManyToOne(fetch = FetchType.LAZY,
 			optional = false)
 	@ReferenceView("Simple")

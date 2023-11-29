@@ -6,6 +6,8 @@ import com.uam.CLINICA.Calculadores.ValidadorSintoma;
 import lombok.*;
 import org.openxava.annotations.*;
 
+import java.util.Collection;
+
 @Entity
 @Getter
 @Setter
@@ -18,5 +20,9 @@ public class Sintomatologia extends Identificable{
 	@PropertyValidator(value= ValidadorSintoma.class)
 	@Required
 	private String nombre;
+
+	@OneToMany(mappedBy="sintomatologia")
+	@ListProperties("numero,medicamento.nombre,cantidad,diagnostico")
+	Collection<Receta> recetas;
 
 }

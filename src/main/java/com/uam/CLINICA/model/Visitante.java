@@ -30,5 +30,9 @@ public class Visitante extends Identificable{
 	@ManyToOne
     @DescriptionsList
     private Carrera carrera;
+
+	@OneToMany(mappedBy="visitante")
+	@ListProperties("numero,date,receta.diagnostico,receta.sintomatologia.nombre,receta.medicamento.nombre,receta.cantidad")
+	Collection<Visita> visitas;
 	
 }
