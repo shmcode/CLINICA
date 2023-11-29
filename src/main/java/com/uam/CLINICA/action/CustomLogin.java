@@ -18,7 +18,7 @@ public class CustomLogin extends ForwardToOriginalURIBaseAction {
 		String userName = getView().getValueString("user");
 		String password = getView().getValueString("password");
 		if (Is.emptyString(userName, password)) { 
-			addError("Usuario No Autorizado"); 
+			addError("Usuario No Autorizado.");
 			return;
 		}		
 		
@@ -26,7 +26,7 @@ public class CustomLogin extends ForwardToOriginalURIBaseAction {
 		List<Usuario> lista = new ArrayList<>();
 		lista = dao.get("Usuario.findByPassword",Usuario.class,userName, password);
 		if (lista == null || lista.isEmpty() || lista.size() == 0) {
-			addError("Usuario No Autorizado"); 
+			addError("Usuario No Autorizado.");
 			return;
 		}
 		SignInHelper.signIn(getRequest(), userName); 

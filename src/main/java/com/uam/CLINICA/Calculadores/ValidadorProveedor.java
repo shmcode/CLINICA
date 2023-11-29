@@ -13,7 +13,7 @@ public class ValidadorProveedor implements IPropertyValidator {
         IDAO dao = new ImplDAO();
         List<Proveedor> lista = dao.get("Proveedor.findByNombre", Proveedor.class, String.valueOf(o));
         if (lista != null && lista.size() > 0) {
-            messages.add("El proveedor ya existe");
+            messages.add("El proveedor ya existe.");
         }
     }
 }
