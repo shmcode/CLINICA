@@ -13,7 +13,7 @@ public class ValidadorSintoma implements IPropertyValidator {
         IDAO dao = new ImplDAO();
         List<Sintomatologia> lista = dao.get("Sintomatologia.findByNombre", Sintomatologia.class, String.valueOf(o));
         if (lista != null && lista.size() > 0) {
-            messages.add("El nombre del sintoma ya existe.");
+            messages.add("El nombre del sintoma ya existe. ");
         }
     }
 }
