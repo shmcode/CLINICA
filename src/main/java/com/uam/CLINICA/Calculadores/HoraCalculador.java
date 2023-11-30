@@ -13,7 +13,7 @@ public class HoraCalculador implements ICalculator {
     public Object calculate() throws Exception {
         LocalTime horaActual = LocalTime.now();// Obtener la hora actual
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("HH:mm");
-        return horaActual.format(formato);// Formatea la hora actual como una cadena
+        return horaActual.format(formato);
     }
 
 }
