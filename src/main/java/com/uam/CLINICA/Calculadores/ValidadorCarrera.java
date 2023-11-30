@@ -14,7 +14,7 @@ public class ValidadorCarrera implements IPropertyValidator {
         IDAO dao = new ImplDAO();
         List<Carrera> lista = dao.get("Carrera.findByNombre", Carrera.class, String.valueOf(o));
         if (lista != null && lista.size() > 0) {
-            messages.add("Esta carrera ya fue creada anteriormente.");
+            messages.add("Esta carrera ya fue creada anteriormente. ");
         }
     }
 }
