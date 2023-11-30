@@ -7,7 +7,7 @@ public class CorreoValidador implements IPropertyValidator{
     public void validate(Messages messages, Object o, String s, String s1) throws Exception{
         String correo = (String) o;
         if (correo == null || !correo.contains("@")) {
-            messages.add("El correo debe contener el símbolo '@'.");
+            messages.add("El correo debe contener el símbolo '@'. ");
         }
     }
 }
