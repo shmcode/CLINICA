@@ -14,7 +14,7 @@ public class ValidadorMed implements IPropertyValidator {
         IDAO dao = new ImplDAO();
         List<Medicamento> lista = dao.get("Medicamento.findByNombre", Medicamento.class, String.valueOf(o));
         if (lista != null && lista.size() > 0) {
-            messages.add("El nombre del medicamento ya existe.");
+            messages.add("El nombre del medicamento ya existe. ");
         }
     }
 }
